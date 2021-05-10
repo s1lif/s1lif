@@ -16,7 +16,7 @@ async def on_message(message):
 
     if message.content.startswith(':Привет'):
         await message.channel.send('qq')
-        await message.channel.send('Меня зовут Home_Bot, я создан для развлечения и общения! Я надеюсь я смогу помочь твоему серверу!')
+        await message.channel.send('Меня зовут S1lif BOT, я создан для развлечения и общения! Я надеюсь я смогу помочь твоему серверу!')
         await message.channel.send('Прописав команду :Help я тебе покажу мои функции!')
         await message.channel.send('Что бы попрощаться напиши :Пока')
 
@@ -36,13 +36,7 @@ async def on_message(message):
       await message.channel.send('Мои категории:')
       await message.channel.send(':Игровое общение')
       await message.channel.send(':Пинг')
-      await message.channel.send(':Поддержка')
 
-
-    if message.content.startswith(':Поддержка'):
-      await message.channel.send('Аккаунт создателя - Idi_Domoy#5486') 
-      await message.channel.send('Discord сервер - https://discord.gg/SnwuX4Sh')
-      await message.channel.send('Ссылка на донат - https://www.donationalerts.com/r/idi_domoy')
 
 
 
