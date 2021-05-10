@@ -35,17 +35,17 @@ async def on_message(message):
     if message.content.startswith(':Help'):
       await message.channel.send('Мои категории:')
       await message.channel.send(':Игры')
-      await message.channel.send(':Нажми что бы все проснулись')
+      await message.channel.send(':что-бы все проснулись')
 
 
 
 
-    if message.content.startswith(':Пинг'):
+    if message.content.startswith(':что-бы все проснулись'):
       await message.channel.send('@everyone')
 
 
 
-    if message.content.startswith(':Игровое общение'):
+    if message.content.startswith(':Игры'):
       await message.channel.send(':Монетка - Игра основанная на игре Орёл-Решка!')
       await message.channel.send(':Imp - вы задаёте боту вопрос не предатель ли ты')
 
