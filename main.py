@@ -1,3 +1,4 @@
+
 import discord
 import os
 from random import randint
@@ -16,7 +17,7 @@ async def on_message(message):
 
     if message.content.startswith(':Привет'):
         await message.channel.send('qq')
-        await message.channel.send('Меня зовут S1lif BOT, я создан для развлечения и общения! Я надеюсь я смогу помочь твоему серверу!')
+        await message.channel.send('Меня зовут Home_Bot, я создан для развлечения и общения! Я надеюсь я смогу помочь твоему серверу!')
         await message.channel.send('Прописав команду :Help я тебе покажу мои функции!')
         await message.channel.send('Что бы попрощаться напиши :Пока')
 
@@ -24,7 +25,7 @@ async def on_message(message):
 
     if message.content.startswith(':Монетка'):
       win_number = 1
-      current_number = randint(1, 2)
+      current_number = randint(1, 4)
       if current_number == win_number:
         await message.channel.send('Опа! Ты выйграл, поздравляю!')
       else:
@@ -34,20 +35,26 @@ async def on_message(message):
 
     if message.content.startswith(':Help'):
       await message.channel.send('Мои категории:')
-      await message.channel.send(':Игры')
-      await message.channel.send(':что-бы все проснулись')
+      await message.channel.send(':Игровое общение')
+      await message.channel.send(':Пинг')
+      await message.channel.send(':Поддержка')
+
+
+    if message.content.startswith(':Поддержка'):
+      await message.channel.send('Аккаунт создателя - Idi_Domoy#5486') 
+      await message.channel.send('Discord сервер - https://discord.gg/SnwuX4Sh')
+      await message.channel.send('Ссылка на донат - https://www.donationalerts.com/r/idi_domoy')
 
 
 
-
-    if message.content.startswith(':что-бы все проснулись'):
+    if message.content.startswith(':Пинг'):
       await message.channel.send('@everyone')
 
 
 
-    if message.content.startswith(':Игры'):
+    if message.content.startswith(':Игровое общение'):
       await message.channel.send(':Монетка - Игра основанная на игре Орёл-Решка!')
-      await message.channel.send(':Imp - вы задаёте боту вопрос не предатель ли ты')
+      await message.channel.send(':Imp - вы задаёте бота вопрос не предатель ли ...')
 
 
 
