@@ -34,8 +34,8 @@ async def on_message(message):
 
     if message.content.startswith(':Help'):
       await message.channel.send('Мои категории:')
-      await message.channel.send(':Игровое общение')
-      await message.channel.send(':Пинг')
+      await message.channel.send(':Игры')
+      await message.channel.send(':Нажми что бы все проснулись')
 
 
 
